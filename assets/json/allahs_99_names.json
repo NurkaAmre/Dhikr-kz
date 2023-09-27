@@ -1,0 +1,596 @@
+[
+  {
+    "title": "AR-RAHMAAN",
+    "name": "الرَّحْمَـٰنُ",
+    "dhikr": "The Most or Entirely Merciful",
+    "benefit": "Reciting it 100 times after every obligatory prayer will enhance memory and awareness. The reciter will feel the burden vanishing away from his heart."
+  },
+  {
+    "title": "AR-RAHEEM",
+    "name": "ٱلْرَّحِيْمُ",
+    "dhikr": "The Bestower of Mercy",
+    "benefit": "Reciting it after Fajr prayer 100 times will keep the person safe from all tribulation. Moreover, he will find everyone benevolent towards him."
+  },
+  {
+    "title": "AL-MALIK",
+    "name": "ٱلْمَلِكُ",
+    "dhikr": "The King and Owner of Dominion",
+    "benefit": "Recitation of this name after Fajr prayer will make a person become rich."
+  },
+  {
+    "title": "AL-QUDDUS",
+    "name": "ٱلْقُدُّوسُ",
+    "dhikr": "The Absolutely Pure",
+    "benefit": "Agitation never comes close if someone recites it 100 times every day."
+  },
+  {
+    "title": "AS-SALAM",
+    "name": "ٱلْسَّلَامُ",
+    "dhikr": "The Perfection and Giver of Peace",
+    "benefit": "The sick will regain his health if this is recited to him 160 times. It also keeps the frequent reciter, of this name, safe from all types of tribulations."
+  },
+  {
+    "title": "AL-MUMIN",
+    "name": "ٱلْمُؤْمِنُ",
+    "dhikr": "The One Who gives Emaan and Security",
+    "benefit": "Reciting it 631 times will keep you safe from anguish."
+  },
+  {
+    "title": "AL-MUHAYMIN",
+    "name": "ٱلْمُهَيْمِنُ",
+    "dhikr": "The Guardian, The Witness, The Overseer",
+    "benefit": "This purifies the soul of a person if it is recited 100 times after taking a bath and offering two rakaats of prayer."
+  },
+  {
+    "title": "AL-AZEEZ",
+    "name": "ٱلْعَزِيزُ",
+    "dhikr": "The All Mighty",
+    "benefit": "Recitation of this name 41 times after Fajr prayer will make the person independent from others and will earn respect."
+  },
+  {
+    "title": "AL-JABBAR",
+    "name": "ٱلْجَبَّارُ",
+    "dhikr": "The Compeller, The Restorer",
+    "benefit": "Whoever recites this name several times will not be forced to do anything. He will be safe from cruelty and hardship."
+  },
+  {
+    "title": "AL-MUTAKABBIR",
+    "name": "ٱلْمُتَكَبِّرُ",
+    "dhikr": "The Supreme, The Majestic",
+    "benefit": "The one who recites this name frequently will earn respect and gain success."
+  },
+  {
+    "title": "AL-KHAALIQ",
+    "name": "ٱلْخَالِقُ",
+    "dhikr": "The Creator, The Maker",
+    "benefit": "Allah will assign an angel to guide the person righteously if he recites this name 100 times continuously for a prescribed limit of 7 days."
+  },
+  {
+    "title": "AL-BAARI",
+    "name": "ٱلْبَارِئُ",
+    "dhikr": "The Originator",
+    "benefit": "This name only signifies that Allah created all things in proportion."
+  },
+  {
+    "title": "AL-MUSAWWIR",
+    "name": "ٱلْمُصَوِّرُ",
+    "dhikr": "The Fashioner",
+    "benefit": "Recite this name 21 times and do a Damm on water. Continue this for 7 consecutive days. Use the water for breaking the fast. Insha’Allah, the woman will soon be blessed with a child."
+  },
+  {
+    "title": "AL-GHAFFAR",
+    "name": "ٱلْغَفَّارُ",
+    "dhikr": "The All- and Oft-Forgiving",
+    "benefit": "The Forgiver, The One who forgives the sins of His slaves."
+  },
+  {
+    "title": "AL-QAHHAR",
+    "name": "ٱلْقَهَّارُ",
+    "dhikr": "The Subduer, The Ever-Dominating",
+    "benefit": "This name will provide the person with inner peace and will lead the person to the correct place."
+  },
+  {
+    "title": "AL-WAHHAAB",
+    "name": "ٱلْوَهَّابُ",
+    "dhikr": "The Giver of Gifts",
+    "benefit": "Reciting it frequently will remove poverty. Reciting it 40 times in the last Sajadah of Chasht prayer will relieve the person from starvation."
+  },
+  {
+    "title": "AL-RAZZAAQ",
+    "name": "ٱلْرَّزَّاقُ",
+    "dhikr": "The Provider",
+    "benefit": "The person will be provided with livelihood by reciting this name."
+  },
+  {
+    "title": "AL-FATTAAH",
+    "name": "ٱلْفَتَّاحُ",
+    "dhikr": "The Opener, The Judge",
+    "benefit": "The reciter of this name will be given success and victory in every aspect of his life."
+  },
+  {
+    "title": "AL-ALEEM",
+    "name": "ٱلْعَلِيمُ",
+    "dhikr": "The All-Knowing, The Omniscient",
+    "benefit": "The heart of the reciter will be enlightened with the light of Nur."
+  },
+  {
+    "title": "AL-QAABID",
+    "name": "ٱلْقَابِضُ",
+    "dhikr": "The Withholder",
+    "benefit": "This finishes poverty from the house if it is written, and eaten on 4 pieces of food till 40 days."
+  },
+  {
+    "title": "AL-BAASIT",
+    "name": "ٱلْبَاسِطُ",
+    "dhikr": "The Extender",
+    "benefit": "Repeating this name 10 times after Chasht prayer and rubbing hands with a face will no longer be dependent upon others."
+  },
+  {
+    "title": "AL-KHAAFID",
+    "name": "ٱلْخَافِضُ",
+    "dhikr": "The Reducer, The Abaser",
+    "benefit": "Allah will fulfill the need of the person who recites it 500 times. It also acts as a guard from all enemies if a group of people sit in the gathering on the fourth day of fasting and recite this name 70 times each."
+  },
+  {
+    "title": "AL-RAAFI",
+    "name": "ٱلْرَّافِعُ",
+    "dhikr": "The Exalter, The Elevator",
+    "benefit": "The one who recites this name 101 times day and night will get wealthier and will be highly regarded in merit."
+  },
+  {
+    "title": "AL-MUIZZ",
+    "name": "ٱلْمُعِزُّ",
+    "dhikr": "The Honourer, The Bestower",
+    "benefit": "Reciting this name 140 times after Maghrib prayer either on Monday or on Friday, Allah will make him majestic in the eyes of other people."
+  },
+  {
+    "title": "AL-MUZIL",
+    "name": "ٱلْمُذِلُّ",
+    "dhikr": "The Dishonourer, The Humiliator",
+    "benefit": "Reciting this name 75 times will protect the person from those who wish to harm him."
+  },
+  {
+    "title": "AS-SAMEE",
+    "name": "ٱلْسَّمِيعُ",
+    "dhikr": "The All-Hearing",
+    "benefit": "Allah will fulfill the desire of a person who recites this name 500, 100, or 50 times on Thursday after the Chasht prayer."
+  },
+  {
+    "title": "AL-BASEER",
+    "name": "ٱلْبَصِيرُ",
+    "dhikr": "The All-Seeing",
+    "benefit": "For the enlightenment of heart and soul, recite this name 100 times after the Jummah prayer."
+  },
+  {
+    "title": "AL-HAKAM",
+    "name": "ٱلْحَكَمُ",
+    "dhikr": "The Judge, The Giver of Justice",
+    "benefit": "Secrets will be revealed to the person who recites this name frequently at night."
+  },
+  {
+    "title": "AL-ADL",
+    "name": "ٱلْعَدْلُ",
+    "dhikr": "The Utterly Just",
+    "benefit": "People will obey you if you will write this name on a piece of bread on Friday."
+  },
+  {
+    "title": "AL-LATEEF",
+    "name": "ٱلْلَّطِيفُ",
+    "dhikr": "The Subtle One, The Most Gentle",
+    "benefit": "To make your affairs get settled accordingly to your will, recite this name 133 times daily."
+  },
+  {
+    "title": "AL-KHABEER",
+    "name": "ٱلْخَبِيرُ",
+    "dhikr": "The Acquainted, the All-Aware",
+    "benefit": "Reciting this name regularly will make a person a righteous man who is indulged in wrong things."
+  },
+  {
+    "title": "AL-HALEEM",
+    "name": "ٱلْحَلِيمُ",
+    "dhikr": "The Most Forbearing",
+    "benefit": "Write this name on a piece of paper and wash it with water. Use that water for sprinkling things. This will keep things safe from all types of damages."
+  },
+  {
+    "title": "AL-AZEEM",
+    "name": "ٱلْعَظِيمُ",
+    "dhikr": "The Magnificent, The Supreme",
+    "benefit": "To earn respect and honor, recite this name several times."
+  },
+  {
+    "title": "AL-GHAFOOR",
+    "name": "ٱلْغَفُورُ",
+    "dhikr": "The Forgiving, The Exceedingly Forgiving",
+    "benefit": "The All-Forgiving, The Forgiving, The One who forgives a lot."
+  },
+  {
+    "title": "ASH-SHAKOOR",
+    "name": "ٱلْشَّكُورُ",
+    "dhikr": "The Most Appreciative",
+    "benefit": "The person will be relieved from all the suffering if he recites this name 41 times daily."
+  },
+  {
+    "title": "AL-ALEE",
+    "name": "ٱلْعَلِيُّ",
+    "dhikr": "The Most High, The Exalted",
+    "benefit": "The one who keeps this name written on a piece of paper will achieve a high rank and success in all his work."
+  },
+  {
+    "title": "AL-KABEER",
+    "name": "ٱلْكَبِيرُ",
+    "dhikr": "The Greatest, The Most Grand",
+    "benefit": "The reciter of this name 100 times daily will be esteemed by every one."
+  },
+  {
+    "title": "AL-HAFEEDH",
+    "name": "ٱلْحَفِيظُ",
+    "dhikr": "The Preserver, The All-Heedful and All-Protecting",
+    "benefit": "Recite this name and do a Damm on water. Give the water to the ill-mannered child. He will become obedient."
+  },
+  {
+    "title": "AL-MUQEET",
+    "name": "ٱلْمُقِيتُ",
+    "dhikr": "The Sustainer",
+    "benefit": "Gives strength and nourishment to His creations and maintains all that exists."
+  },
+  {
+    "title": "AL-HASEEB",
+    "name": "ٱلْحَسِيبُ",
+    "dhikr": "The Reckoner, The Sufficient",
+    "benefit": "The Ever-Reckoner, The One who takes account of all actions and reckons them on the day of judgment."
+  },
+  {
+    "title": "AL-JALEEL",
+    "name": "ٱلْجَلِيلُ",
+    "dhikr": "The Majestic",
+    "benefit": "Repeating this name frequently will help a person attain respect and honor."
+  },
+  {
+    "title": "AL-KAREEM",
+    "name": "ٱلْكَرِيمُ",
+    "dhikr": "The Most Generous, The Most Esteemed",
+    "benefit": "To earn a lot of respect in this world and Hereafter, recite this name many times before going to sleep."
+  },
+  {
+    "title": "AR-RAQEEB",
+    "name": "ٱلْرَّقِيبُ",
+    "dhikr": "The Watchful",
+    "benefit": "Recite this name seven times and do a Damm on yourself or your family. This will ensure safety under Allah’s protection."
+  },
+  {
+    "title": "AL-MUJEEB",
+    "name": "ٱلْمُجِيبُ",
+    "dhikr": "The Responsive One",
+    "benefit": "If you want an answer to any of your appeals, then you will get it if you recite this name frequently."
+  },
+  {
+    "title": "AL-WAASI",
+    "name": "ٱلْوَاسِعُ",
+    "dhikr": "The All-Encompassing, the Boundless",
+    "benefit": "Allah opens the doors of income if someone recites this name many times. His difficulties in earning be vanished."
+  },
+  {
+    "title": "AL-HAKEEM",
+    "name": "ٱلْحَكِيمُ",
+    "dhikr": "The All-Wise",
+    "benefit": "This name, when recited, removes the difficulties of the work."
+  },
+  {
+    "title": "AL-WADOOD",
+    "name": "ٱلْوَدُودُ",
+    "dhikr": "The Most Loving",
+    "benefit": "This name helps in resolving a disagreement between two people if one gives the other person food after reciting this name 1000 times in his food."
+  },
+  {
+    "title": "AL-MAJEED",
+    "name": "ٱلْمَجِيدُ",
+    "dhikr": "The Glorious, The Most Honorable",
+    "benefit": "This name bestows a person with glory."
+  },
+  {
+    "title": "AL-BAITH",
+    "name": "ٱلْبَاعِثُ",
+    "dhikr": "The Resurrector, The Raiser of the Dead",
+    "benefit": "This name makes a person God-fearing and therefore, it leads him to the righteous path."
+  },
+  {
+    "title": "ASH-SHAHEED",
+    "name": "ٱلْشَّهِيدُ",
+    "dhikr": "The All- and Ever Witnessing",
+    "benefit": "Recite this name 21 times with the hand placed on the head of the disobedient person. Insha’Allah, he will become obedient."
+  },
+  {
+    "title": "AL-HAQQ",
+    "name": "ٱلْحَقُّ",
+    "dhikr": "The Absolute Truth",
+    "benefit": "If you lost something, then recite this name."
+  },
+  {
+    "title": "AL-WAKEEL",
+    "name": "ٱلْوَكِيلُ",
+    "dhikr": "The Trustee, The Disposer of Affairs",
+    "benefit": "Allah will protect that person from drowning or burning in the fire if he recites this name frequently."
+  },
+  {
+    "title": "AL-QAWIYY",
+    "name": "ٱلْقَوِيُّ",
+    "dhikr": "The All-Strong",
+    "benefit": "This keeps a person safe from the harm of the enemy if he is unable to defeat the enemy."
+  },
+  {
+    "title": "AL-MATEEN",
+    "name": "ٱلْمَتِينُ",
+    "dhikr": "The Firm, The Steadfast",
+    "benefit": "This helps a person to get rid of all types of troubles."
+  },
+  {
+    "title": "AL-WALIYY",
+    "name": "ٱلْوَلِيُّ",
+    "dhikr": "The Protecting Associate",
+    "benefit": "Reciting this name makes the person closer to Allah."
+  },
+  {
+    "title": "AL-HAMEED",
+    "name": "ٱلْحَمِيدُ",
+    "dhikr": "The Praiseworthy",
+    "benefit": "The one who recites this name will be praised and loved."
+  },
+  {
+    "title": "AL-MUHSEE",
+    "name": "ٱلْمُحْصِيُ",
+    "dhikr": "The All-Enumerating, The Counter",
+    "benefit": "This name provides ease to the person if he is afraid of being questioned on the Day of Resurrection."
+  },
+  {
+    "title": "AL-MUBDI",
+    "name": "ٱلْمُبْدِئُ",
+    "dhikr": "The Originator, The Initiator",
+    "benefit": "A pregnant woman will be safe from danger while aborting if she repeats this name several times."
+  },
+  {
+    "title": "AL-MUID",
+    "name": "ٱلْمُعِيدُ",
+    "dhikr": "The Restorer, The Reinstater",
+    "benefit": "Reciting this name 70 times will bring the person who has left home within 7 days, safe and secure."
+  },
+  {
+    "title": "AL-MUHYEE",
+    "name": "ٱلْمُحْيِى",
+    "dhikr": "The Giver of Life",
+    "benefit": "This name reduces the burden of a person if recited 7 times every day."
+  },
+  {
+    "title": "AL-MUMEET",
+    "name": "ٱلْمُمِيتُ",
+    "dhikr": "The Bringer of Death, the Destroyer",
+    "benefit": "This name destroys the enemy completely."
+  },
+  {
+    "title": "AL-HAYY",
+    "name": "ٱلْحَىُّ",
+    "dhikr": "The Ever-Living",
+    "benefit": "The reciter of this name will have a long life."
+  },
+  {
+    "title": "AL-QAYYOOM",
+    "name": "ٱلْقَيُّومُ",
+    "dhikr": "The Sustainer, The Self-Subsisting",
+    "benefit": "The one repeating this name will remain active."
+  },
+  {
+    "title": "AL-WAAJID",
+    "name": "ٱلْوَاجِدُ",
+    "dhikr": "The Perceiver",
+    "benefit": "This name increases the richness of the heart."
+  },
+  {
+    "title": "AL-MAAJID",
+    "name": "ٱلْمَاجِدُ",
+    "dhikr": "The Illustrious, the Magnificent",
+    "benefit": "This name enlightens the heart of its reciter."
+  },
+  {
+    "title": "AL-WAAHID",
+    "name": "ٱلْوَاحِدُ",
+    "dhikr": "The One",
+    "benefit": "Reciting this name 1000 times in silence alone will vanish the fear from the heart."
+  },
+  {
+    "title": "AL-AHAD",
+    "name": "ٱلْأَحَد",
+    "dhikr": "The Unique, The Only One",
+    "benefit": "Secrets will be revealed to the person who recites this name 1000 times."
+  },
+  {
+    "title": "AS-SAMAD",
+    "name": "ٱلْصَّمَدُ",
+    "dhikr": "The Eternal, Satisfier of Needs",
+    "benefit": "Allah will fulfill all the needs of the person who recites this name many times."
+  },
+  {
+    "title": "AL-QADIR",
+    "name": "ٱلْقَادِرُ",
+    "dhikr": "The Capable, The Powerful",
+    "benefit": "Allah fulfills all the desires of the person who recites this name often."
+  },
+  {
+    "title": "AL-MUQTADIR",
+    "name": "ٱلْمُقْتَدِرُ",
+    "dhikr": "The Omnipotent",
+    "benefit": "The reciter will become aware of the truth."
+  },
+  {
+    "title": "AL-MUQADDIM",
+    "name": "ٱلْمُقَدِّمُ",
+    "dhikr": "The Expediter, The Promoter",
+    "benefit": "Reciting this name on the battlefield removes all the fear and keeps the person safe from harm."
+  },
+  {
+    "title": "AL-MUAKHKHIR",
+    "name": "ٱلْمُؤَخِّرُ",
+    "dhikr": "The Delayer, the Retarder",
+    "benefit": "Reciting this name in the heart 100 times enriches the person’s heart with the love of Allah. All his worldly desires will be removed as no other love will ever replace his heart."
+  },
+  {
+    "title": "AL-AWWAL",
+    "name": "ٱلأَوَّلُ",
+    "dhikr": "The First",
+    "benefit": "If recited 40 times for 40 days, it will give a child to a family who is not blessed with one. Moreover, a traveler will reach home safe and sound if he recites this name 1000 times on Friday."
+  },
+  {
+    "title": "AL-AAKHIR",
+    "name": "ٱلْآخِرُ",
+    "dhikr": "The Last",
+    "benefit": "The reciter of this name will have a good life and a good death."
+  },
+  {
+    "title": "AZ-ZAHIR",
+    "name": "ٱلْظَّاهِرُ",
+    "dhikr": "The Manifest",
+    "benefit": "The reciter’s heart will be enlightened with Noor (the divine light) if this name is recited 15 times after the Jummah prayer on Friday."
+  },
+  {
+    "title": "AL-BAATIN",
+    "name": "ٱلْبَاطِنُ",
+    "dhikr": "The Hidden One, Knower of the Hidden",
+    "benefit": "With the recitation of this name only three times every day, he will be able to know the truth in all things."
+  },
+  {
+    "title": "AL-WAALI",
+    "name": "ٱلْوَالِي",
+    "dhikr": "The Governor, The Patron",
+    "benefit": "This name keeps the house safe from all dangers."
+  },
+  {
+    "title": "AL-MUTAALI",
+    "name": "ٱلْمُتَعَالِي",
+    "dhikr": "The Self Exalted",
+    "benefit": "Whosoever recites this name will become closer to Allah."
+  },
+  {
+    "title": "AL-BARR",
+    "name": "ٱلْبَرُّ",
+    "dhikr": "The Source of Goodness, the Kind Benefactor",
+    "benefit": "This name will make the future of the child of reciter free from misfortune."
+  },
+  {
+    "title": "AT-TAWWAB",
+    "name": "ٱلْتَّوَّابُ",
+    "dhikr": "The Ever-Pardoning, The Relenting",
+    "benefit": "Dua’s are accepted if this name is recited frequently."
+  },
+  {
+    "title": "AL-MUNTAQIM",
+    "name": "ٱلْمُنْتَقِمُ",
+    "dhikr": "The Avenger",
+    "benefit": "This helps gain victory against enemies."
+  },
+  {
+    "title": "AL-AFUWW",
+    "name": "ٱلْعَفُوُّ",
+    "dhikr": "The Pardoner",
+    "benefit": "This name helps a person in the forgiveness of all his sins."
+  },
+  {
+    "title": "AL-RAOOF",
+    "name": "ٱلْرَّؤُفُ",
+    "dhikr": "The Most Kind",
+    "benefit": "Allah blesses the one who recites this name more often."
+  },
+  {
+    "title": "MAALIK-UL-MULK",
+    "name": "مَالِكُ ٱلْمُلْكُ",
+    "dhikr": "Master of the Kingdom, Owner of the Dominion",
+    "benefit": "This name gives respect to its reciter among people."
+  },
+  {
+    "title": "DHUL-JALAALI WAL-IKRAAM",
+    "name": "ذُو ٱلْجَلَالِ وَٱلْإِكْرَامُ",
+    "dhikr": "Possessor of Glory and Honour, Lord of Majesty and Generosity",
+    "benefit": "This name removes poverty and makes a person rich."
+  },
+  {
+    "title": "AL-MUQSIT",
+    "name": "ٱلْمُقْسِطُ",
+    "dhikr": "The Equitable, the Requiter",
+    "benefit": "This name provides protection from the harm of a devil."
+  },
+  {
+    "title": "AL-JAAMI",
+    "name": "ٱلْجَامِعُ",
+    "dhikr": "The Gatherer, the Uniter",
+    "benefit": "With the power and glory of this name, you will be able to find lost things."
+  },
+  {
+    "title": "AL-GHANIYY",
+    "name": "ٱلْغَنيُّ",
+    "dhikr": "The Self-Sufficient, The Wealthy",
+    "benefit": "Reciting this name 70 times will make a person free from all needs."
+  },
+  {
+    "title": "AL-MUGHNI",
+    "name": "ٱلْمُغْنِيُّ",
+    "dhikr": "The Enricher",
+    "benefit": "Reciting this name 1000 times for ten consecutive Fridays will make a person become self-sufficient."
+  },
+  {
+    "title": "AL-MANI",
+    "name": "ٱلْمَانِعُ",
+    "dhikr": "The Withholder",
+    "benefit": "Recitation of this name 20 times at bedtime provides a happy family life."
+  },
+  {
+    "title": "AD-DAHRR",
+    "name": "ٱلْضَّارُ",
+    "dhikr": "The Distresser",
+    "benefit": "This name helps a person in gaining peace if it is read 20 times on Friday nights."
+  },
+  {
+    "title": "AN-NAFI",
+    "name": "ٱلْنَّافِعُ",
+    "dhikr": "The Propitious, the Benefactor",
+    "benefit": "This name gives success on every good act if it is started with the recitation of this name 41 times."
+  },
+  {
+    "title": "AN-NUR",
+    "name": "ٱلْنُّورُ",
+    "dhikr": "The Light, The Illuminator",
+    "benefit": "This name enlightens the inside of the person."
+  },
+  {
+    "title": "AL-HAADI",
+    "name": "ٱلْهَادِي",
+    "dhikr": "The Guide",
+    "benefit": "1100 times of the recitation of this name makes a person fulfill his needs."
+  },
+  {
+    "title": "AL-BADEE",
+    "name": "ٱلْبَدِيعُ",
+    "dhikr": "The Incomparable Originator",
+    "benefit": "To gain relief from any type of distress, a person should recite this name 70,000 times."
+  },
+  {
+    "title": "AL-BAAQI",
+    "name": "ٱلْبَاقِي",
+    "dhikr": "The Ever-Surviving, The Everlasting",
+    "benefit": "To ensure that all your good deeds are accepted, recite this name 100 times every Friday night."
+  },
+  {
+    "title": "AL-WAARITH",
+    "name": "ٱلْوَارِثُ",
+    "dhikr": "The Inheritor, The Heir",
+    "benefit": "A person will remain safe from sorrow and distress if he recites this name 100 times after the sunrise."
+  },
+  {
+    "title": "AR-RASHEED",
+    "name": "ٱلْرَّشِيدُ",
+    "dhikr": "The Guide, Infallible Teacher",
+    "benefit": "To complete a task you are unable to do, recite this name 1000 times between Maghrib and Isha prayer."
+  },
+  {
+    "title": "AS-SABOOR",
+    "name": "ٱلْصَّبُورُ",
+    "dhikr": "The Forbearing, The Patient",
+    "benefit": "The person will be rescued from his difficulty if he recites this name 3000 times."
+  }
+]
