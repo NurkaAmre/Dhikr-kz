@@ -12,8 +12,8 @@ const CongratulationsModal = ({ visible, onClose }) => {
     >
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
-          <Text style={styles.modalText}>Congratulations!</Text>
-          <Text>You have reached your target.</Text>
+          <Text style={styles.modalText}>Жарайсыз!</Text>
+          <Text>Күнделікті мақсатыңыз сәтті орындалды.</Text>
           <TouchableOpacity onPress={onClose} style={styles.closeButton}>
             <Text style={styles.closeButtonText}>OK</Text>
           </TouchableOpacity>
@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.large,
     fontWeight: 'bold',
     marginBottom: 10,
+    fontFamily: 'Elmess'
   },
   closeButton: {
     marginTop: 10,

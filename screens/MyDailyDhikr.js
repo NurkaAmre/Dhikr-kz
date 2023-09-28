@@ -78,7 +78,7 @@ const MyDailyDhikr = ({ navigation }) => {
       <View style={styles.imageContainer}>
         <ImageBackground source={mydhikr} style={styles.image} />
       </View>
-      <Text style={styles.text}>My Daily Dhikr</Text>
+      <Text style={styles.text}>Күнделікті Зікірлер</Text>
     
       {dhikrCards.map((dhikr, index) => (
         <TouchableOpacity
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
   text: {
     color: COLORS.secondary,
     fontSize: SIZES.xxLarge,
-    fontFamily: 'PatrickHandSC',
+    fontFamily: 'Caveat',
     textAlign: 'center',
   },
   inputContainer: {
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
   cardText: {
     color: COLORS.white,
     fontSize: SIZES.large,
-    fontFamily: 'PatrickHand',
+    fontFamily: 'MarckScript',
   },
   cardContainer: {
     flexDirection: 'row',
