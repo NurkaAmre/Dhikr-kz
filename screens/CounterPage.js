@@ -111,7 +111,7 @@ const CounterPage = ({ route }) => {
         keyboardVerticalOffset={Platform.OS === 'ios' ? 100 : 0}
       >
         <View style={styles.btns}>
-          <Text style={styles.label}>Target</Text>
+          <Text style={styles.label}>Мақсат</Text>
           <TextInput
             placeholder="0"
             style={styles.input}
@@ -128,7 +128,7 @@ const CounterPage = ({ route }) => {
         </View>
 
         <View style={styles.btns}>
-          <Text style={styles.label}>Done</Text>
+          <Text style={styles.label}>Орындалды</Text>
           <TextInput
             style={styles.input}
             value={count.toString()}
@@ -138,7 +138,7 @@ const CounterPage = ({ route }) => {
         </View>
 
         <View style={styles.btns}>
-          <Text style={styles.label}>Days</Text>
+          <Text style={styles.label}>Күндер</Text>
           <TextInput style={styles.input} value={days.toString()} />
           <View style={styles.minplus}>
             <EvilIcons name="minus" style={styles.icon} onPress={decrementDays} />
@@ -168,7 +168,7 @@ const CounterPage = ({ route }) => {
             navigation.navigate('MyDailyDhikr');
           }}
         >
-          <Text style={styles.buttonText2}>Done Dhikr</Text>
+          <Text style={styles.buttonText2}>Зікір Орындалды</Text>
         </TouchableOpacity>
       </View>
       <CongratulationsModal
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
   text: {
     color: COLORS.primary,
     fontSize: SIZES.xLarge,
-    fontFamily: 'PatrickHandSC',
+    fontFamily: 'Caveat',
     textAlign: 'center',
     paddingHorizontal: 10
   },
@@ -221,13 +221,13 @@ const styles = StyleSheet.create({
   cardText: {
     color: "#fff",
     fontSize: SIZES.medium,
-    fontFamily: "PatrickHand"
+    fontFamily: "Elmess"
   },
   label: {
     color: COLORS.tertiary,
     fontSize: SIZES.small,
     alignSelf: 'flex-start',
-    fontFamily: 'PatrickHand',
+    fontFamily: 'Elmess',
     marginBottom: 5
   },
   btnContainer: {
@@ -294,7 +294,7 @@ const styles = StyleSheet.create({
   buttonText2: {
     color: COLORS.white,
     fontSize: SIZES.xLarge,
-    fontFamily: 'PatrickHand',
+    fontFamily: 'MarckScript',
     textAlign: 'center',
   },
   buttonContainer: {

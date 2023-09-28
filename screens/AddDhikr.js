@@ -8,7 +8,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const AddDhikr = ({ navigation}) => {
   const route = useRoute();
   const [newTarget, setNewTarget] = useState('');
-  const [title, setTitle] = useState(route.params?.title || 'Add Dhikr');
+  const [title, setTitle] = useState(route.params?.title || 'Зікір');
    const [showCustomDhikr, setShowCustomDhikr] = useState(route.params?.showCustomDhikr || false);
   const [customDhikr, setCustomDhikr] = useState('');
 
@@ -56,7 +56,7 @@ const AddDhikr = ({ navigation}) => {
         benefit: nameData.benefit,
       });
     } catch (error) {
-      console.error('Error saving custom Dhikr:', error);
+      console.error('Кешіріңіз қателік орын алды:', error);
     }
   };
 
@@ -67,7 +67,7 @@ const { showCustomInput } = route.params || {};
       keyboardVerticalOffset={Platform.OS === 'ios' ? 100 : 0}
       style={styles.container}
     >
-      <Text style={styles.text}>Add Dhikr</Text>
+      <Text style={styles.text}>Зікір Қосу</Text>
       <View style={styles.imageContainer}>
         <ImageBackground source={adddhikr} style={styles.image} />
       </View>
@@ -75,9 +75,9 @@ const { showCustomInput } = route.params || {};
         <Text style={styles.title}>{title}</Text>
         {showCustomInput && (
     <View>
-      <Text style={styles.label}>Add Dhikr</Text>
+      <Text style={styles.label}>Зікір қосу</Text>
       <TextInput
-        placeholder='Enter your Dhikr here'
+        placeholder='Зікір еңгізіңіз'
         style={styles.input1}
         value={customDhikr}
         onChangeText={(text) => {
@@ -88,7 +88,7 @@ const { showCustomInput } = route.params || {};
     </View>
         )}
         <View>
-          <Text style={styles.label}>Set your target</Text>
+          <Text style={styles.label}>Мақсатты белгілеңіз</Text>
           <TextInput
             placeholder='0'
             style={styles.input}
@@ -110,7 +110,7 @@ const { showCustomInput } = route.params || {};
             });
           }}
         >
-          <Text style={styles.buttonText}>Save Dhikr</Text>
+          <Text style={styles.buttonText}>Сақтау</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
   text: {
     color: COLORS.secondary,
     fontSize: SIZES.xxLarge,
-    fontFamily: 'PatrickHandSC',
+    fontFamily: 'Caveat',
     textAlign: 'center',
     marginBottom: 80
   },
@@ -143,14 +143,14 @@ const styles = StyleSheet.create({
   title: {
     color: COLORS.tertiary,
     fontSize: SIZES.large,
-    fontFamily: 'PatrickHand',
+    fontFamily: 'MarckScript',
     paddingBottom: 20,
   },
   label: {
     color: COLORS.primary,
     fontSize: SIZES.small,
     alignSelf: 'flex-start',
-    fontFamily: 'PatrickHand',
+    fontFamily: 'Balsamiq',
     marginBottom: 5,
   },
   input: {
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: COLORS.white,
     fontSize: SIZES.xLarge,
-    fontFamily: 'PatrickHand',
+    fontFamily: 'MarckScript',
     textAlign: 'center',
   },
     imageContainer: {

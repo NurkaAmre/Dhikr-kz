@@ -5,7 +5,7 @@ import category from '../assets/images/category.png'
 const Category = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Category</Text>
+      <Text style={styles.text}>Категория</Text>
       <View style={styles.TextContainer}>
         <TouchableOpacity
             style={styles.buttonContainer}
@@ -13,7 +13,7 @@ const Category = ({navigation}) => {
               navigation.navigate('AllahsNames');
             }}
           >
-            <Text style={styles.buttonText}>99 Names of Allah</Text>
+            <Text style={styles.buttonText}>Алланың 99 есімі</Text>
       </TouchableOpacity>
       <TouchableOpacity
             style={styles.buttonContainer}
@@ -21,7 +21,7 @@ const Category = ({navigation}) => {
               navigation.navigate('DailyDhikr');
             }}
           >
-            <Text style={styles.buttonText}>Daily Dhikrs</Text>
+            <Text style={styles.buttonText}>Зікірлер</Text>
       </TouchableOpacity>
       <TouchableOpacity
             style={styles.buttonContainer}
@@ -29,7 +29,7 @@ const Category = ({navigation}) => {
               navigation.navigate('AddDhikr', { showCustomInput: true });
             }}
           >
-            <Text style={styles.buttonText}>Add Dhikr</Text>
+            <Text style={styles.buttonText}>Зікір Қосу</Text>
         </TouchableOpacity>
       </View>
       <Image source={category} style={styles.image}/>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     marginTop: 150,
     color: COLORS.secondary,
     fontSize: SIZES.xxLarge,
-    fontFamily: 'PatrickHandSC',
+    fontFamily: 'Caveat',
     textAlign: 'center',
   },
   TextContainer: {
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: COLORS.white,
     fontSize: SIZES.xLarge,
-    fontFamily: 'PatrickHand',
+    fontFamily: 'MarckScript',
     textAlign: 'center',
   },
 })

@@ -12,13 +12,9 @@ const COLORS = {
   lightWhite: "#FAFAFC",
 };
 
-// const FONT = {
-//   regular: "PatrickHand-Regular",
-//   medium: "PatrickHandSC-Regular",
-// };
 const FONT = {
-  'PatrickHand-Regular': require('../assets/fonts/PatrickHand-Regular.ttf'),
-  'PatrickHand-Bold': require('../assets/fonts/PatrickHandSC-Regular.ttf'),
+  'PatrickHand': require('../assets/fonts/PatrickHand-Regular.ttf'),
+  'PatrickHandSC': require('../assets/fonts/PatrickHandSC-Regular.ttf'),
   'BalsamiqSans': require('../assets/fonts/BalsamiqSans-Regular.ttf'),
   'Caveat': require('../assets/fonts/Caveat-VariableFont_wght.ttf'),
   'CormorantGaramond': require('../assets/fonts/CormorantGaramond-Regular.ttf'),
