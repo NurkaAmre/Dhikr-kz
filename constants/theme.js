@@ -28,7 +28,8 @@ const SIZES = {
   small: 14,
   medium: 18,
   large: 28,
-  xLarge: 34,
+  category: 34,
+  xLarge: 40,
   xxLarge: 62,
 };
 

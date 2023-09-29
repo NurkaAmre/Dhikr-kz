@@ -45,7 +45,7 @@ export default function Main({navigation}) {
         onLayout={onLayout}
       >
         <View>
-          <Text style={styles.text}>Зікір</Text>
+          <Text style={styles.text}>Зікір ету</Text>
           <Image source={kid} style={styles.image} />
           <TouchableOpacity
             style={styles.buttonContainer}
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   text: {
     color: COLORS.secondary,
     fontSize: SIZES.xxLarge,
-    fontFamily: 'Caveat',
+    fontFamily: 'MarckScript',
     textAlign: 'center',
   },
   image: {

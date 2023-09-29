@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     marginTop: 150,
     color: COLORS.secondary,
     fontSize: SIZES.xxLarge,
-    fontFamily: 'Caveat',
+    fontFamily: 'MarckScript',
     textAlign: 'center',
   },
   TextContainer: {
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: COLORS.white,
-    fontSize: SIZES.xLarge,
+    fontSize: SIZES.category,
     fontFamily: 'MarckScript',
     textAlign: 'center',
   },

@@ -37,9 +37,8 @@ const AllahsNames = ({ navigation }) => {
           <ScrollView contentContainerStyle={styles.scrollContainer}>
             <View style={styles.mainText}>
               <Text style={styles.arabic}>{nameData.name}</Text>
-              <Text style={styles.paragraph1}>{nameData.title}</Text>
-              <Text style={styles.paragraph1}>{nameData.dhikr}</Text>
-              <Text style={styles.title}>Benefits:</Text>
+              <Text style={styles.paragraph1}>{nameData.title} - {nameData.dhikr}</Text>
+              <Text style={styles.title}>Сауап:</Text>
               <ScrollView
               contentContainerStyle={styles.benefitScrollView}
               nestedScrollEnabled={true} // Enable nested scrolling
@@ -54,7 +53,7 @@ const AllahsNames = ({ navigation }) => {
               navigation.navigate('AddDhikr', { title: nameData.title , dhikr: nameData.dhikr, benefit: nameData.benefit});
             }}
           >
-            <Text style={styles.buttonText}>Add Dhikr</Text>
+            <Text style={styles.buttonText}>Зікір қосу</Text>
           </TouchableOpacity>
         </ImageBackground>
       ))}
@@ -66,7 +65,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.bgMain,
-    paddingTop: 20,
+    paddingTop: 10,
   },
   image: {
     width: 410,
@@ -74,8 +73,8 @@ const styles = StyleSheet.create({
   },
   text: {
     color: COLORS.secondary,
-    fontSize: SIZES.xxLarge,
-    fontFamily: 'PatrickHandSC',
+    fontSize: SIZES.xLarge,
+    fontFamily: 'MarckScript',
     alignSelf: 'center',
     paddingTop: 50
   },
@@ -89,14 +88,15 @@ const styles = StyleSheet.create({
   },
   mainText: {
     justifyContent: 'space-between',
+    fontFamily: "Cormorant",
     gap: 10,
     paddingHorizontal: 30,
     paddingTop: 40
   },
   title: {
-    color: COLORS.tertiary,
+    color: COLORS.primary,
     fontSize: SIZES.large,
-    fontFamily: 'PatrickHand',
+    fontFamily: 'Caveat',
   },
   benefitScrollView: {
     flex: 1,
@@ -108,25 +108,25 @@ const styles = StyleSheet.create({
   },
   arabic: {
     color: COLORS.primary,
-    fontSize: SIZES.medium
+    fontSize: SIZES.large
   },
   paragraph1: {
     color: COLORS.secondary,
     fontSize: SIZES.medium,
-    fontFamily: 'PatrickHandSC'
+    fontFamily: 'Elmess'
   },
   paragraph: {
     color: '#fff',
     fontSize: SIZES.medium,
-    fontFamily: 'PatrickHand',
+    fontFamily: 'Cormorant',
   },
   buttonContainer: {
-    backgroundColor: '#CA6853',
+    backgroundColor: 'rgba(202, 100, 90, 0.72)',
     borderRadius: 40,
     paddingVertical: 3,
     paddingHorizontal: 30,
     alignSelf: 'center',
-    marginBottom: 60,
+    marginBottom: 100,
     ...Platform.select({
       ios: {
         shadowColor: 'rgba(0, 0, 0, 0.25)',
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: COLORS.white,
     fontSize: SIZES.xLarge,
-    fontFamily: 'PatrickHand',
+    fontFamily: 'MarckScript',
     textAlign: 'center',
   },
 });
