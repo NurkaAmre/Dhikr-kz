@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, ImageBackground, Text, StyleSheet, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, Vibration, Alert } from 'react-native';
+import { View, ImageBackground, Text, StyleSheet, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, } from 'react-native';
 import { COLORS, SIZES } from '../constants/theme';
 import counter from '../assets/images/counter.png';
 import { EvilIcons } from '@expo/vector-icons';
@@ -14,7 +14,7 @@ const CounterPage = ({ route }) => {
   const [count, setCount] = useState(0);
   const [days, setDays] = useState(0);
   const [showCongratulationsModal, setShowCongratulationsModal] = useState(false);
-  const [title, setTitle] = useState(route.params?.title || 'Add Dhikr');
+  const [title, setTitle] = useState(route.params?.title || '');
   const [customDhikr, setCustomDhikr] = useState(route.params?.customDhikr || '');
   const [dhikr, setDhikr] = useState(route.params?.dhikr || ''); 
   const [benefit, setBenefit] = useState(route.params?.benefit || '');
@@ -66,31 +66,42 @@ const CounterPage = ({ route }) => {
     if (route.params && route.params.customDhikr) {
       setCustomDhikr(route.params.customDhikr);
     }
+    if (route.params && route.params.dhikr) {
+      setDhikr(route.params.dhikr);
+    }
   }, [route.params]);
 
   const resetCount = () => {
     setCount(0);
   };
 
-  const saveDhikrToMyDailyDhikr = async () => {
-    try {
-      const dhikrCard = `${title}`;
-      const savedDhikrCards = await AsyncStorage.getItem('dhikrCards');
+  const resetDhikrAndTitle = () => {
+  setTitle('');
+  setDhikr('');
+  setCustomDhikr('')
+  setBenefit('')
+};
 
-      if (savedDhikrCards !== null) {
-        const updatedDhikrCards = JSON.parse(savedDhikrCards);
-        updatedDhikrCards.push(dhikrCard);
-        await AsyncStorage.setItem('dhikrCards', JSON.stringify(updatedDhikrCards));
-      } else {
-        const initialDhikrCards = [dhikrCard];
-        await AsyncStorage.setItem('dhikrCards', JSON.stringify(initialDhikrCards));
-      }
+const saveDhikrToMyDailyDhikr = async () => {
+  try {
+    const dhikrCard = `${title}`;
+    const savedDhikrCards = await AsyncStorage.getItem('dhikrCards');
 
-      navigation.navigate('MyDailyDhikr');
-    } catch (error) {
-      console.error('Error saving dhikr card:', error);
+    if (savedDhikrCards !== null) {
+      const updatedDhikrCards = JSON.parse(savedDhikrCards);
+      updatedDhikrCards.push(dhikrCard);
+      await AsyncStorage.setItem('dhikrCards', JSON.stringify(updatedDhikrCards));
+    } else {
+      const initialDhikrCards = [dhikrCard];
+      await AsyncStorage.setItem('dhikrCards', JSON.stringify(initialDhikrCards));
     }
-  };
+
+    resetDhikrAndTitle(); // Call reset function before navigating
+    navigation.navigate('MyDailyDhikr');
+  } catch (error) {
+    console.error('Error saving dhikr card:', error);
+  }
+};
 
   return (
     <View style={styles.container}>
@@ -101,8 +112,7 @@ const CounterPage = ({ route }) => {
       <View style={styles.card}>
         <Text style={styles.cardText}>
           {customDhikr}
-          {dhikr}
-         
+          {dhikr}    
         </Text>
       </View>
 
@@ -165,7 +175,12 @@ const CounterPage = ({ route }) => {
         <TouchableOpacity
           style={styles.buttonContainer2}
           onPress={() => {
-            navigation.navigate('MyDailyDhikr');
+            resetDhikrAndTitle();
+            navigation.navigate('MyDailyDhikr', {
+              title: title,
+              dhikr: dhikr,
+              customDhikr: customDhikr
+            });
           }}
         >
           <Text style={styles.buttonText2}>Орындалды</Text>

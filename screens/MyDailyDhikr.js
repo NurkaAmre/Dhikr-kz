@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import {
+  ScrollView,
   View,
   Text,
   StyleSheet,
   ImageBackground,
-  Image,
-  KeyboardAvoidingView,
   TouchableOpacity,
-  TextInput,
-  StatusBar,
 } from 'react-native';
 import { COLORS, SIZES } from '../constants/theme';
 import mydhikr from '../assets/images/mydhikr.png';
 import { EvilIcons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const MyDailyDhikr = ({ navigation }) => {
+const MyDailyDhikr = ({ navigation, route }) => {
   const [dhikrCards, setDhikrCards] = useState([]);
   const [newDhikr, setNewDhikr] = useState('');
   const [underlinedCards, setUnderlinedCards] = useState([]);
+  const [dhikr, setDhikr] = useState(route.params?.dhikr || ''); 
+  const [title, setTitle] = useState(route.params?.title || '');
+  const [customDhikr, setCustomDhikr] = useState(route.params?.customDhikr || '');
+  
 
   useEffect(() => {
     const loadDhikrCards = async () => {
@@ -34,17 +35,6 @@ const MyDailyDhikr = ({ navigation }) => {
 
     loadDhikrCards();
   }, []);
-
-  const handleAddDhikr = () => {
-    if (newDhikr.trim() !== '') {
-      const updatedDhikrCards = [...dhikrCards, newDhikr];
-      setDhikrCards(updatedDhikrCards);
-      setNewDhikr('');
-
-      // Save updated dhikr cards to AsyncStorage
-      saveDhikrCards(updatedDhikrCards);
-    }
-  };
 
   const handleCheckDhikr = (index) => {
     // Toggle the underlined state for the clicked card
@@ -71,9 +61,8 @@ const MyDailyDhikr = ({ navigation }) => {
   };
 
   return (
-    <KeyboardAvoidingView
+    <ScrollView
       style={styles.container}
-      keyboardVerticalOffset={Platform.OS === 'ios' ? 100 : 0}
     >
       <View style={styles.imageContainer}>
         <ImageBackground source={mydhikr} style={styles.image} />
@@ -85,7 +74,11 @@ const MyDailyDhikr = ({ navigation }) => {
           style={styles.card}
           key={index}
           onPress={() => {
-            navigation.navigate('CounterPage');
+            navigation.navigate('CounterPage', {
+            dhikr: dhikr,
+            title: title,
+            customDhikr: customDhikr,
+          });;
           }}
         >
           {/* Wrap the dhikr text in a <Text> component */}
@@ -116,7 +109,7 @@ const MyDailyDhikr = ({ navigation }) => {
           </View>
         </TouchableOpacity>
       ))}
-    </KeyboardAvoidingView>
+    </ScrollView>
   );
 };
 
@@ -124,9 +117,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.bgMain,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: StatusBar.currentHeight,
+    paddingVertical: 50,
+    paddingHorizontal: 10,
+    paddingBottom: 100
   },
   imageContainer: {
     position: 'absolute',
@@ -139,7 +132,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: COLORS.secondary,
-    fontSize: SIZES.xxLarge,
+    fontSize: SIZES.xLarge,
     fontFamily: 'Caveat',
     textAlign: 'center',
   },
@@ -171,7 +164,7 @@ const styles = StyleSheet.create({
   },
   card: {
     flexDirection: 'row',
-    backgroundColor: COLORS.primary,
+    backgroundColor: 'rgba(202, 100, 80, 0.72)',
     borderRadius: 30,
     paddingHorizontal: 10,
     paddingVertical: 5,

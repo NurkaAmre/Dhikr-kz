@@ -8,6 +8,7 @@ import { useFonts } from 'expo-font';
 import kid from '../assets/images/kid.png';
 import masjid from '../assets/images/masjid.png';
 import { useEffect, useCallback } from 'react';
+import { EvilIcons } from '@expo/vector-icons';
 
 const Stack = createStackNavigator();
 
@@ -45,8 +46,9 @@ export default function Main({navigation}) {
         onLayout={onLayout}
       >
         <View>
-          <Text style={styles.text}>Зікір ету</Text>
-          <Image source={kid} style={styles.image} />
+        <Text style={styles.text}>Зікір ету</Text>
+        <Image source={kid} style={styles.image} />
+        
           <TouchableOpacity
             style={styles.buttonContainer}
             onPress={() => {
@@ -54,8 +56,15 @@ export default function Main({navigation}) {
             }}
           >
             <Text style={styles.buttonText}>Бастау</Text>
-          </TouchableOpacity>
-        </View>
+        </TouchableOpacity>
+        <EvilIcons name="exclamation"
+          style={styles.icon}
+          onPress={() => {
+            navigation.navigate('DevInfo');
+            }}
+        />
+      </View>
+     
       </ImageBackground>
   );
 }
@@ -75,6 +84,13 @@ const styles = StyleSheet.create({
   },
   image: {
     marginTop: 80,
+  },
+  icon: {
+    fontSize: SIZES.xLarge,
+    marginTop: 40,
+    marginLeft: 330,
+    alignSelf: "center",
+    color: COLORS.tertiary,
   },
     buttonContainer: {
     backgroundColor: "#CA6853",

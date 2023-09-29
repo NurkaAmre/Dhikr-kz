@@ -9,6 +9,7 @@ import DailyDhikr from './screens/DailyDhikr'
 import AddDhikr from './screens/AddDhikr';
 import MyDailyDhikr from './screens/MyDailyDhikr'
 import CounterPage from './screens/CounterPage';
+import DevInfo from './components/DevInfo';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,7 @@ export default function App() {
         <Stack.Screen name="AddDhikr" component={AddDhikr} />
         <Stack.Screen name="MyDailyDhikr" component={MyDailyDhikr} />
         <Stack.Screen name="CounterPage" component={CounterPage} />
+        <Stack.Screen name="DevInfo" component={DevInfo} />
       </Stack.Navigator>
     </NavigationContainer>
   );
