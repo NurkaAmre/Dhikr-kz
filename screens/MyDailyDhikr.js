@@ -14,7 +14,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const MyDailyDhikr = ({ navigation, route }) => {
   const [dhikrCards, setDhikrCards] = useState([]);
-  const [newDhikr, setNewDhikr] = useState('');
   const [underlinedCards, setUnderlinedCards] = useState([]);
   const [dhikr, setDhikr] = useState(route.params?.dhikr || ''); 
   const [title, setTitle] = useState(route.params?.title || '');
