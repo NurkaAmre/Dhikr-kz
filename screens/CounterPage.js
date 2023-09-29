@@ -168,7 +168,7 @@ const CounterPage = ({ route }) => {
             navigation.navigate('MyDailyDhikr');
           }}
         >
-          <Text style={styles.buttonText2}>Зікір Орындалды</Text>
+          <Text style={styles.buttonText2}>Орындалды</Text>
         </TouchableOpacity>
       </View>
       <CongratulationsModal
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: COLORS.primary,
-    fontSize: SIZES.xLarge,
+    fontSize: SIZES.large,
     fontFamily: 'Caveat',
     textAlign: 'center',
     paddingHorizontal: 10

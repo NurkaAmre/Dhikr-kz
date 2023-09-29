@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: COLORS.tertiary,
-    fontSize: SIZES.large,
+    fontSize: SIZES.medium,
     fontFamily: 'MarckScript',
     paddingBottom: 20,
   },

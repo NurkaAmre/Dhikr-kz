@@ -22,6 +22,14 @@ const Category = ({navigation}) => {
             }}
           >
             <Text style={styles.buttonText}>Зікірлер</Text>
+        </TouchableOpacity>
+      <TouchableOpacity
+            style={styles.buttonContainer}
+            onPress={() => {
+            navigation.navigate('MyDailyDhikr');
+          }}
+          >
+            <Text style={styles.buttonText}>Менің Зікірлерім</Text>
       </TouchableOpacity>
       <TouchableOpacity
             style={styles.buttonContainer}
