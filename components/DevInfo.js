@@ -8,19 +8,19 @@ const DevInfo = () => {
   const handleShare = async () => {
     try {
       const shareOptions = {
-        title: 'Share Title',
-        message: 'Message to be shared...',
+        title: 'Зікір Қосымшасы',
+        message: 'Зікір Қосымшасын жүктеп алыңыз!',
       };
       await Share.share(shareOptions);
     } catch (error) {
-      console.error('Error sharing:', error);
+      console.error('Қателік орын алды:', error);
     }
   };
 
   const handleRate = () => {
     const appStoreUrl = Platform.select({
-      ios: 'https://apps.apple.com/app-id', // Replace 'app-id' with your iOS app's ID
-      android: 'market://details?id=com.yourapp.package', // Replace with your Android app's package name
+      ios: 'https://apps.apple.com/app-id',
+      android: 'market://details?id=com.yourapp.package',
     });
 
     Linking.openURL(appStoreUrl)
@@ -38,7 +38,13 @@ const DevInfo = () => {
       style={[styles.container, styles.bg]}
     >
       <View style={styles.containers}>
-        <Text style={styles.text}>Assalamu alaykum! 🕌</Text>
+        <Text style={styles.text}>Assalamu alaykum!</Text>
+        <Text style={styles.text2}>Егер сізде сұрақтар немесе ұсыныстар болса, бізге хат жолдаңыз! nurkerey30@gmail.com</Text>
+        <View style={styles.dots}>
+          <Text style={styles.dot}>•°•°•</Text>
+          <Text style={styles.dot}>•°•°•</Text>
+          <Text style={styles.dot}>•°•°•</Text>
+        </View>
         <View>
           <TouchableOpacity style={styles.iconContainer} onPress={handleShare}>
             <Text style={styles.paragraph}>Share</Text>
@@ -68,9 +74,9 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   containers: {
-    backgroundColor: 'rgba(209, 131, 111, 0.40)',
+    backgroundColor: 'rgba(202, 124, 93, 0.9)',
     borderRadius: 30,
-    paddingHorizontal: 40,
+    paddingHorizontal: 30,
     justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: 20,
@@ -82,7 +88,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   text: {
-    color: COLORS.white,
+    color: COLORS.bgMain,
     fontSize: SIZES.large,
     fontFamily: 'MarckScript',
     textAlign: 'center',
@@ -90,18 +96,33 @@ const styles = StyleSheet.create({
   text1: {
     fontFamily: 'Elmess',
     paddingTop: 20,
-    color: COLORS.primary,
+    color: COLORS.bgMain,
+  },
+  text2: {
+    paddingVertical: 20,
+    fontFamily: 'Elmess',
+    color: "white"
+  },
+  dots: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 30,
+    paddingHorizontal: 40,
+    paddingVertical: 10,
+  },
+  dot: {
+    color: COLORS.lightWhite
   },
   icon: {
     fontSize: SIZES.xLarge,
     alignSelf: 'center',
-    color: COLORS.tertiary,
+    color: COLORS.bgMain,
     fontWeight: 'bold',
   },
   paragraph: {
     fontSize: SIZES.medium,
     fontFamily: 'Balsamiq',
-    color: COLORS.tertiary,
+    color: COLORS.bgMain,
   },
 });
 

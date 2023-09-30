@@ -3,6 +3,7 @@ const COLORS = {
   primary: "#CA6853",
   secondary: "#828777",
   tertiary: "#4A4646",
+  dots: "#F3F4F8",
 
   bg: "#CA6853",
   bgMain: "#f3e2d9",
