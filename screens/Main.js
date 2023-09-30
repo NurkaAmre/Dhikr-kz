@@ -1,4 +1,3 @@
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import {StyleSheet,Text,View,ImageBackground,Image,TouchableOpacity} from 'react-native';
@@ -81,6 +80,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.xxLarge,
     fontFamily: 'MarckScript',
     textAlign: 'center',
+    paddingTop: 40
   },
   image: {
     marginTop: 80,
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   icon: {
     fontSize: SIZES.xLarge,
     marginTop: 40,
-    marginLeft: 330,
+    marginLeft: 350,
     alignSelf: "center",
     color: COLORS.tertiary,
   },
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#CA6853",
     borderRadius: 40,
     paddingVertical: 6,
-    paddingHorizontal: 50, // Add spacing to separate from the image
+    paddingHorizontal: 50,
      alignSelf: 'center',
     ...Platform.select({
       ios: {
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
       android: {
         elevation: 6,
       },
-    }), // Center the button horizontally
+    }),
   },
   buttonText: {
     color: COLORS.white,
