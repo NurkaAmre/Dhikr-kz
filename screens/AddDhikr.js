@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.xxLarge,
     fontFamily: 'Caveat',
     textAlign: 'center',
-    marginBottom: 80,
+    marginBottom: 40,
   },
   textContainer: {
     backgroundColor: 'rgba(159, 121, 121, 0.22)',

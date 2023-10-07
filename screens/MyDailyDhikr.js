@@ -12,6 +12,7 @@ import { COLORS, SIZES } from '../constants/theme';
 import mydhikr from '../assets/images/mydhikr.png';
 import { EvilIcons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { StatusBar } from 'expo-status-bar';
 
 const MyDailyDhikr = ({ navigation, route }) => {
   const [dhikrCards, setDhikrCards] = useState([]);
@@ -135,6 +136,7 @@ const styles = StyleSheet.create({
     color: COLORS.secondary,
     fontSize: SIZES.xLarge,
     fontFamily: 'Caveat',
+    paddingTop: 100,
     textAlign: 'center',
   },
   inputContainer: {

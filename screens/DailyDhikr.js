@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     paddingHorizontal: 20,
     alignSelf: 'center',
-    marginBottom: 30,
+    marginBottom: 50,
     ...Platform.select({
       ios: {
         shadowColor: 'rgba(0, 0, 0, 0.25)',

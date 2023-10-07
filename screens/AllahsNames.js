@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.xLarge,
     fontFamily: 'MarckScript',
     alignSelf: 'center',
-    paddingTop: 30,
+    paddingTop: 50,
   },
   // Add a scrollContainer style for the ScrollView
   scrollContainer: {

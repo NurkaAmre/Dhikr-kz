@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.bgMain,
     alignItems: 'center',
+    paddingTop: StatusBar.currentHeight,
     justifyContent: 'center',
     paddingTop: StatusBar.currentHeight,
   },
@@ -92,11 +93,11 @@ const styles = StyleSheet.create({
     paddingTop: 30,
   },
   image: {
-    marginTop: 80,
+    marginTop: 60,
   },
   icon: {
     fontSize: SIZES.xLarge,
-    marginTop: 0,
+    marginTop: 10,
     marginLeft: 350,
     alignSelf: 'center',
     color: COLORS.tertiary,

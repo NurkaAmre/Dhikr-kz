@@ -56,12 +56,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.bgMain,
+    paddingTop: StatusBar.currentHeight,
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: StatusBar.currentHeight,
   },
   text: {
-    marginTop: 150,
+    marginTop: 100,
     color: COLORS.secondary,
     fontSize: SIZES.xxLarge,
     fontFamily: 'MarckScript',
@@ -98,4 +99,5 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
 export default Category;
