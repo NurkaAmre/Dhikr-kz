@@ -11,14 +11,16 @@ import { COLORS, SIZES } from '../constants/theme';
 import mydhikr from '../assets/images/mydhikr.png';
 import { EvilIcons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { StatusBar } from 'expo-status-bar';
 
 const MyDailyDhikr = ({ navigation, route }) => {
   const [dhikrCards, setDhikrCards] = useState([]);
   const [underlinedCards, setUnderlinedCards] = useState([]);
-  const [dhikr, setDhikr] = useState(route.params?.dhikr || ''); 
+  const [dhikr, setDhikr] = useState(route.params?.dhikr || '');
   const [title, setTitle] = useState(route.params?.title || '');
-  const [customDhikr, setCustomDhikr] = useState(route.params?.customDhikr || '');
-  
+  const [customDhikr, setCustomDhikr] = useState(
+    route.params?.customDhikr || ''
+  );
 
   useEffect(() => {
     const loadDhikrCards = async () => {
@@ -53,35 +55,36 @@ const MyDailyDhikr = ({ navigation, route }) => {
 
   const saveDhikrCards = async (updatedDhikrCards) => {
     try {
-      await AsyncStorage.setItem('dhikrCards', JSON.stringify(updatedDhikrCards));
+      await AsyncStorage.setItem(
+        'dhikrCards',
+        JSON.stringify(updatedDhikrCards)
+      );
     } catch (error) {
       console.error('Error saving dhikr cards:', error);
     }
   };
 
   return (
-    <ScrollView
-      style={styles.container}
-    >
+    <ScrollView style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageBackground source={mydhikr} style={styles.image} />
       </View>
       <Text style={styles.text}>Күнделікті Зікірлер</Text>
-    
+
       {dhikrCards.map((dhikr, index) => (
         <TouchableOpacity
           style={styles.card}
           key={index}
           onPress={() => {
             navigation.navigate('CounterPage', {
-            dhikr: dhikr,
-            title: title,
-            customDhikr: customDhikr,
-          });;
+              dhikr: dhikr,
+              title: title,
+              customDhikr: customDhikr,
+            });
           }}
         >
           {/* Wrap the dhikr text in a <Text> component */}
-           <Text
+          <Text
             style={[
               styles.cardText,
               underlinedCards[index] && styles.underlinedText,
@@ -116,9 +119,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.bgMain,
-    paddingVertical: 50,
+    paddingTop: StatusBar.currentHeight,
     paddingHorizontal: 10,
-    paddingBottom: 100
   },
   imageContainer: {
     position: 'absolute',
@@ -133,6 +135,7 @@ const styles = StyleSheet.create({
     color: COLORS.secondary,
     fontSize: SIZES.xLarge,
     fontFamily: 'Caveat',
+    paddingTop: 100,
     textAlign: 'center',
   },
   inputContainer: {
@@ -195,9 +198,9 @@ const styles = StyleSheet.create({
     paddingTop: 6,
     color: '#fff',
   },
-   underlinedText: {
-     textDecorationLine: 'line-through',
-     opacity: 0.7,
+  underlinedText: {
+    textDecorationLine: 'line-through',
+    opacity: 0.7,
   },
 });
 

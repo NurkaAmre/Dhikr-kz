@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { View, ImageBackground, Text, StyleSheet, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, } from 'react-native';
+import {
+  View,
+  ImageBackground,
+  Text,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  KeyboardAvoidingView,
+  Platform,
+  StatusBar,
+} from 'react-native';
 import { COLORS, SIZES } from '../constants/theme';
 import counter from '../assets/images/counter.png';
 import { EvilIcons } from '@expo/vector-icons';
@@ -13,10 +23,13 @@ const CounterPage = ({ route }) => {
   const [target, setTarget] = useState(0);
   const [count, setCount] = useState(0);
   const [days, setDays] = useState(0);
-  const [showCongratulationsModal, setShowCongratulationsModal] = useState(false);
+  const [showCongratulationsModal, setShowCongratulationsModal] =
+    useState(false);
   const [title, setTitle] = useState(route.params?.title || '');
-  const [customDhikr, setCustomDhikr] = useState(route.params?.customDhikr || '');
-  const [dhikr, setDhikr] = useState(route.params?.dhikr || ''); 
+  const [customDhikr, setCustomDhikr] = useState(
+    route.params?.customDhikr || ''
+  );
+  const [dhikr, setDhikr] = useState(route.params?.dhikr || '');
   const [benefit, setBenefit] = useState(route.params?.benefit || '');
 
   useEffect(() => {
@@ -76,32 +89,38 @@ const CounterPage = ({ route }) => {
   };
 
   const resetDhikrAndTitle = () => {
-  setTitle('');
-  setDhikr('');
-  setCustomDhikr('')
-  setBenefit('')
-};
+    setTitle('');
+    setDhikr('');
+    setCustomDhikr('');
+    setBenefit('');
+  };
 
-const saveDhikrToMyDailyDhikr = async () => {
-  try {
-    const dhikrCard = `${title}`;
-    const savedDhikrCards = await AsyncStorage.getItem('dhikrCards');
+  const saveDhikrToMyDailyDhikr = async () => {
+    try {
+      const dhikrCard = `${title}`;
+      const savedDhikrCards = await AsyncStorage.getItem('dhikrCards');
 
-    if (savedDhikrCards !== null) {
-      const updatedDhikrCards = JSON.parse(savedDhikrCards);
-      updatedDhikrCards.push(dhikrCard);
-      await AsyncStorage.setItem('dhikrCards', JSON.stringify(updatedDhikrCards));
-    } else {
-      const initialDhikrCards = [dhikrCard];
-      await AsyncStorage.setItem('dhikrCards', JSON.stringify(initialDhikrCards));
+      if (savedDhikrCards !== null) {
+        const updatedDhikrCards = JSON.parse(savedDhikrCards);
+        updatedDhikrCards.push(dhikrCard);
+        await AsyncStorage.setItem(
+          'dhikrCards',
+          JSON.stringify(updatedDhikrCards)
+        );
+      } else {
+        const initialDhikrCards = [dhikrCard];
+        await AsyncStorage.setItem(
+          'dhikrCards',
+          JSON.stringify(initialDhikrCards)
+        );
+      }
+
+      resetDhikrAndTitle(); // Call reset function before navigating
+      navigation.navigate('MyDailyDhikr');
+    } catch (error) {
+      console.error('Error saving dhikr card:', error);
     }
-
-    resetDhikrAndTitle(); // Call reset function before navigating
-    navigation.navigate('MyDailyDhikr');
-  } catch (error) {
-    console.error('Error saving dhikr card:', error);
-  }
-};
+  };
 
   return (
     <View style={styles.container}>
@@ -112,7 +131,7 @@ const saveDhikrToMyDailyDhikr = async () => {
       <View style={styles.card}>
         <Text style={styles.cardText}>
           {customDhikr}
-          {dhikr}    
+          {dhikr}
         </Text>
       </View>
 
@@ -151,8 +170,16 @@ const saveDhikrToMyDailyDhikr = async () => {
           <Text style={styles.label}>Күндер</Text>
           <TextInput style={styles.input} value={days.toString()} />
           <View style={styles.minplus}>
-            <EvilIcons name="minus" style={styles.icon} onPress={decrementDays} />
-            <EvilIcons name="plus" style={styles.icon} onPress={incrementDays} />
+            <EvilIcons
+              name="minus"
+              style={styles.icon}
+              onPress={decrementDays}
+            />
+            <EvilIcons
+              name="plus"
+              style={styles.icon}
+              onPress={incrementDays}
+            />
           </View>
         </View>
       </KeyboardAvoidingView>
@@ -171,7 +198,13 @@ const saveDhikrToMyDailyDhikr = async () => {
         <Text style={styles.buttonText}>+</Text>
       </TouchableOpacity>
 
-      <View style={{ flexDirection: 'row', position: 'relative', justifyContent: 'center' }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          position: 'relative',
+          justifyContent: 'center',
+        }}
+      >
         <TouchableOpacity
           style={styles.buttonContainer2}
           onPress={() => {
@@ -179,7 +212,7 @@ const saveDhikrToMyDailyDhikr = async () => {
             navigation.navigate('MyDailyDhikr', {
               title: title,
               dhikr: dhikr,
-              customDhikr: customDhikr
+              customDhikr: customDhikr,
             });
           }}
         >
@@ -198,7 +231,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.bgMain,
-    paddingTop: 60
+    paddingTop: StatusBar.currentHeight,
   },
   imageContainer: {
     position: 'absolute',
@@ -214,7 +247,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.large,
     fontFamily: 'Caveat',
     textAlign: 'center',
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
   },
   card: {
     flexDirection: 'row',
@@ -224,7 +257,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 40,
     paddingVertical: 20,
     marginTop: 20,
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -234,24 +267,24 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   cardText: {
-    color: "#fff",
+    color: '#fff',
     fontSize: SIZES.medium,
-    fontFamily: "Elmess"
+    fontFamily: 'Elmess',
   },
   label: {
     color: COLORS.tertiary,
     fontSize: SIZES.small,
     alignSelf: 'flex-start',
     fontFamily: 'Elmess',
-    marginBottom: 5
+    marginBottom: 5,
   },
   btnContainer: {
-    flexDirection: "row",
+    flexDirection: 'row',
     paddingHorizontal: 30,
     gap: 50,
     paddingTop: 40,
-    justifyContent: "center",
-    alignItems: "center"
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   input: {
     backgroundColor: COLORS.secondary,
@@ -261,7 +294,7 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     fontSize: SIZES.large,
     width: 80,
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -273,22 +306,22 @@ const styles = StyleSheet.create({
   icon: {
     fontSize: SIZES.xLarge,
     marginTop: 4,
-    alignSelf: "center",
+    alignSelf: 'center',
     color: COLORS.tertiary,
   },
   minplus: {
     flexDirection: 'row',
-    justifyContent: "space-evenly"
+    justifyContent: 'space-evenly',
   },
   divider: {
     borderBottomColor: COLORS.secondary,
     borderBottomWidth: 1,
     marginHorizontal: 30,
     marginBottom: 30,
-    marginTop: 5
+    marginTop: 5,
   },
   buttonContainer2: {
-    backgroundColor: "#CA6853",
+    backgroundColor: '#CA6853',
     borderRadius: 40,
     paddingVertical: 4,
     marginTop: 60,
@@ -338,14 +371,14 @@ const styles = StyleSheet.create({
   },
   icons1: {
     fontSize: SIZES.xLarge,
-    position: "absolute",
+    position: 'absolute',
     color: COLORS.tertiary,
     left: 20,
     top: 70,
   },
   icons2: {
     fontSize: SIZES.xLarge,
-    position: "absolute",
+    position: 'absolute',
     color: COLORS.tertiary,
     right: 20,
     top: 70,
