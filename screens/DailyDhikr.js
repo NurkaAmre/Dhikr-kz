@@ -8,9 +8,10 @@ import {
   TouchableOpacity,
   Platform,
   ScrollView,
+  StatusBar,
 } from 'react-native';
 import { COLORS, SIZES } from '../constants/theme';
-import bg from '../assets/images/bg.png';
+import bg from '../assets/images/10.png';
 import Dhikrs from '../assets/json/dhikrs.json';
 
 const DailyDhikr = ({ navigation }) => {
@@ -23,16 +24,12 @@ const DailyDhikr = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       {dhikr.map((nameData, index) => (
-        <ImageBackground
-          key={index}
-          source={bg}
-          style={styles.image}
-        >
+        <ImageBackground key={index} source={bg} style={styles.image}>
           <Text style={styles.text}>
-          {nameData.title.length > 15
-            ? nameData.title.substring(0, 15) + '...'
-            : nameData.title}
-        </Text>
+            {nameData.title.length > 15
+              ? nameData.title.substring(0, 15) + '...'
+              : nameData.title}
+          </Text>
           {/* Wrap your content inside a ScrollView */}
           <ScrollView contentContainerStyle={styles.scrollContainer}>
             <View style={styles.mainText}>
@@ -41,17 +38,21 @@ const DailyDhikr = ({ navigation }) => {
               <Text style={styles.paragraph1}>{nameData.dhikr}</Text>
               <Text style={styles.title}>Сауап:</Text>
               <ScrollView
-              contentContainerStyle={styles.benefitScrollView}
-              nestedScrollEnabled={true} // Enable nested scrolling
-            >
-              <Text style={styles.paragraph}>{nameData.benefit}</Text>
-            </ScrollView>
+                contentContainerStyle={styles.benefitScrollView}
+                nestedScrollEnabled={true} // Enable nested scrolling
+              >
+                <Text style={styles.paragraph}>{nameData.benefit}</Text>
+              </ScrollView>
             </View>
           </ScrollView>
           <TouchableOpacity
             style={styles.buttonContainer}
-             onPress={() => {
-               navigation.navigate('AddDhikr', { title: nameData.title , dhikr: nameData.dhikr, benefit: nameData.benefit});
+            onPress={() => {
+              navigation.navigate('AddDhikr', {
+                title: nameData.title,
+                dhikr: nameData.dhikr,
+                benefit: nameData.benefit,
+              });
             }}
           >
             <Text style={styles.buttonText}>Зікір қосу</Text>
@@ -66,23 +67,23 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.bgMain,
-    paddingTop: 20,
+    paddingTop: StatusBar.currentHeight,
   },
   image: {
-    width: 410,
-    height: 850,
+    // width: 400,
+    // height: 850,
   },
   text: {
     color: COLORS.secondary,
     fontSize: SIZES.xLarge,
     fontFamily: 'MarckScript',
     alignSelf: 'center',
-    paddingTop: 50
+    paddingTop: 20,
   },
   // Add a scrollContainer style for the ScrollView
   scrollContainer: {
     flexDirection: 'column',
-    paddingHorizontal: 10,
+    paddingHorizontal: 20,
     marginVertical: 30,
     justifyContent: 'space-around',
     gap: 20,
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     gap: 10,
     paddingHorizontal: 30,
-    paddingTop: 40
+    paddingTop: 20,
   },
   title: {
     color: COLORS.primary,
@@ -101,19 +102,19 @@ const styles = StyleSheet.create({
   benefitScrollView: {
     flex: 1,
     maxHeight: 400,
-    backgroundColor: 'rgba(159, 141, 131, 0.72)', 
+    backgroundColor: 'rgba(159, 141, 131, 0.72)',
     borderRadius: 20,
     paddingHorizontal: 20,
-   paddingVertical: 20
+    paddingVertical: 20,
   },
   arabic: {
     color: COLORS.primary,
-    fontSize: SIZES.medium
+    fontSize: SIZES.medium,
   },
   paragraph1: {
-    color: COLORS.secondary,
+    color: COLORS.tertiary,
     fontSize: SIZES.small,
-    fontFamily: 'Elmess'
+    fontFamily: 'Elmess',
   },
   paragraph: {
     color: '#fff',
@@ -124,7 +125,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(202, 100, 90, 0.72)',
     borderRadius: 40,
     paddingVertical: 3,
-    paddingHorizontal: 30,
+    marginTop: 20,
+    paddingHorizontal: 20,
     alignSelf: 'center',
     marginBottom: 30,
     ...Platform.select({
@@ -141,7 +143,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: COLORS.white,
-    fontSize: SIZES.xLarge,
+    fontSize: SIZES.large,
     fontFamily: 'MarckScript',
     textAlign: 'center',
   },

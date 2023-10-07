@@ -1,18 +1,31 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, TextInput, KeyboardAvoidingView, Platform, ImageBackground } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
+  TextInput,
+  KeyboardAvoidingView,
+  Platform,
+  ImageBackground,
+  StatusBar,
+} from 'react-native';
 import { COLORS, SIZES } from '../constants/theme';
 import adddhikr from '../assets/images/adddhikr.png';
 import { useRoute } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const AddDhikr = ({ navigation}) => {
+const AddDhikr = ({ navigation }) => {
   const route = useRoute();
   const [newTarget, setNewTarget] = useState('');
   const [title, setTitle] = useState(route.params?.title || 'Зікір');
-   const [showCustomDhikr, setShowCustomDhikr] = useState(route.params?.showCustomDhikr || false);
+  const [showCustomDhikr, setShowCustomDhikr] = useState(
+    route.params?.showCustomDhikr || false
+  );
   const [customDhikr, setCustomDhikr] = useState('');
 
-   const nameData = {
+  const nameData = {
     dhikr: route.params?.dhikr || '',
     benefit: route.params?.benefit || '',
   };
@@ -45,12 +58,15 @@ const AddDhikr = ({ navigation}) => {
         dhikr: customDhikr,
       };
       existingDhikrs.push(newDhikr);
-      await AsyncStorage.setItem('user_custom_dhikr', JSON.stringify(existingDhikrs));
+      await AsyncStorage.setItem(
+        'user_custom_dhikr',
+        JSON.stringify(existingDhikrs)
+      );
       setCustomDhikr('');
 
       navigation.navigate('CounterPage', {
         newTarget: newTarget,
-        title: title, 
+        title: title,
         customDhikr: customDhikr,
         dhikr: nameData.dhikr,
         benefit: nameData.benefit,
@@ -60,7 +76,7 @@ const AddDhikr = ({ navigation}) => {
     }
   };
 
-const { showCustomInput } = route.params || {};
+  const { showCustomInput } = route.params || {};
 
   return (
     <KeyboardAvoidingView
@@ -71,28 +87,28 @@ const { showCustomInput } = route.params || {};
       <View style={styles.imageContainer}>
         <ImageBackground source={adddhikr} style={styles.image} />
       </View>
-     <View style={styles.textContainer}>
+      <View style={styles.textContainer}>
         <Text style={styles.title}>{title}</Text>
         {showCustomInput && (
-    <View>
-      <Text style={styles.label}>Зікір қосу</Text>
-      <TextInput
-        placeholder='Зікір еңгізіңіз'
-        style={styles.input1}
-        value={customDhikr}
-        onChangeText={(text) => {
-        setCustomDhikr(text);
-        setTitle(text);
-      }}
-      />
-    </View>
+          <View>
+            <Text style={styles.label}>Зікір қосу</Text>
+            <TextInput
+              placeholder="Зікір еңгізіңіз"
+              style={styles.input1}
+              value={customDhikr}
+              onChangeText={(text) => {
+                setCustomDhikr(text);
+                setTitle(text);
+              }}
+            />
+          </View>
         )}
         <View>
           <Text style={styles.label}>Мақсатты белгілеңіз</Text>
           <TextInput
-            placeholder='0'
+            placeholder="0"
             style={styles.input}
-            keyboardType='numeric'
+            keyboardType="numeric"
             value={newTarget}
             onChangeText={(text) => setNewTarget(text)}
           />
@@ -115,28 +131,27 @@ const { showCustomInput } = route.params || {};
       </View>
     </KeyboardAvoidingView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.bgMain,
     alignItems: 'center',
-    paddingTop: 100,
-    // justifyContent: 'center',
+    paddingTop: StatusBar.currentHeight,
   },
   text: {
     color: COLORS.secondary,
     fontSize: SIZES.xxLarge,
     fontFamily: 'Caveat',
     textAlign: 'center',
-    marginBottom: 80
+    marginBottom: 80,
   },
   textContainer: {
     backgroundColor: 'rgba(159, 121, 121, 0.22)',
     borderRadius: 30,
     paddingHorizontal: 50,
-    justifyContent: "center",
+    justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: 40,
   },
@@ -160,21 +175,21 @@ const styles = StyleSheet.create({
     height: 50,
     fontSize: SIZES.large,
     paddingLeft: 10,
-    color: "#fff",
+    color: '#fff',
     marginBottom: 40,
   },
   input1: {
     fontSize: SIZES.medium,
-      backgroundColor: COLORS.secondary,
+    backgroundColor: COLORS.secondary,
     width: 250,
     borderRadius: 20,
     height: 50,
     paddingLeft: 10,
-    color: "#fff",
+    color: '#fff',
     marginBottom: 40,
-  }, 
+  },
   buttonContainer: {
-    backgroundColor: "#CA6853",
+    backgroundColor: '#CA6853',
     borderRadius: 40,
     paddingVertical: 6,
     paddingHorizontal: 50,
@@ -197,7 +212,7 @@ const styles = StyleSheet.create({
     fontFamily: 'MarckScript',
     textAlign: 'center',
   },
-    imageContainer: {
+  imageContainer: {
     position: 'absolute',
     bottom: -100,
     left: 0,
