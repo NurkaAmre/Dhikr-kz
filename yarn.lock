@@ -6220,7 +6220,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@*", "prop-types@^15.6.0", "prop-types@^15.7.2":
+"prop-types@*", "prop-types@^15.7.2":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -6406,14 +6406,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native-volume-control@^1.0.1":
-  "integrity" "sha512-LbFD6AoFltkYxFQEn5SlZsdHGtY4x/A7kkh6CJuzSWjyJMvNDNLTXiQ8YnSVTGiio/qhhWLXXfOMOothxo/16Q=="
-  "resolved" "https://registry.npmjs.org/react-native-volume-control/-/react-native-volume-control-1.0.1.tgz"
-  "version" "1.0.1"
-  dependencies:
-    "prop-types" "^15.6.0"
-
-"react-native@*", "react-native@^0.0.0-0 || 0.60 - 0.72 || 1000.0.0", "react-native@>=0.31.0", "react-native@0.72.4":
+"react-native@*", "react-native@^0.0.0-0 || 0.60 - 0.72 || 1000.0.0", "react-native@0.72.4":
   "integrity" "sha512-+vrObi0wZR+NeqL09KihAAdVlQ9IdplwznJWtYrjnQ4UbCW6rkzZJebRsugwUneSOKNFaHFEo1uKU89HsgtYBg=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.72.4.tgz"
   "version" "0.72.4"

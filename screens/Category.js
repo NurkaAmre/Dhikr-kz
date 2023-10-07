@@ -1,7 +1,13 @@
-import { View, Text, StyleSheet, TouchableOpacity, Image,  } from "react-native"
-import { COLORS, SIZES } from '../constants/theme'
-import category from '../assets/images/category.png'
-import { StatusBar } from 'expo-status-bar';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
+  StatusBar,
+} from 'react-native';
+import { COLORS, SIZES } from '../constants/theme';
+import category from '../assets/images/category.png';
 
 const Category = ({ navigation }) => {
   return (
@@ -53,6 +59,7 @@ const styles = StyleSheet.create({
     paddingTop: StatusBar.currentHeight,
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: StatusBar.currentHeight,
   },
   text: {
     marginTop: 100,
@@ -70,7 +77,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     backgroundColor: '#CA6853',
     borderRadius: 40,
-    paddingVertical: 6,
+    paddingVertical: 10,
     paddingHorizontal: 50,
     alignSelf: 'center',
     ...Platform.select({
@@ -87,9 +94,10 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: COLORS.white,
-    fontSize: SIZES.category,
+    fontSize: SIZES.large,
     fontFamily: 'MarckScript',
     textAlign: 'center',
   },
 });
-export default Category
+
+export default Category;

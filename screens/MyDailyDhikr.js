@@ -6,6 +6,7 @@ import {
   StyleSheet,
   ImageBackground,
   TouchableOpacity,
+  StatusBar,
 } from 'react-native';
 import { COLORS, SIZES } from '../constants/theme';
 import mydhikr from '../assets/images/mydhikr.png';

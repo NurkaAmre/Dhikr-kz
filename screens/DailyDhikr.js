@@ -11,7 +11,7 @@ import {
   StatusBar,
 } from 'react-native';
 import { COLORS, SIZES } from '../constants/theme';
-import bg from '../assets/images/bg.png';
+import bg from '../assets/images/10.png';
 import Dhikrs from '../assets/json/dhikrs.json';
 
 const DailyDhikr = ({ navigation }) => {
@@ -70,20 +70,20 @@ const styles = StyleSheet.create({
     paddingTop: StatusBar.currentHeight,
   },
   image: {
-    width: 410,
-    height: 850,
+    // width: 400,
+    // height: 850,
   },
   text: {
     color: COLORS.secondary,
     fontSize: SIZES.xLarge,
     fontFamily: 'MarckScript',
     alignSelf: 'center',
-    paddingTop: 50,
+    paddingTop: 20,
   },
   // Add a scrollContainer style for the ScrollView
   scrollContainer: {
     flexDirection: 'column',
-    paddingHorizontal: 10,
+    paddingHorizontal: 20,
     marginVertical: 30,
     justifyContent: 'space-around',
     gap: 20,
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     gap: 10,
     paddingHorizontal: 30,
-    paddingTop: 40,
+    paddingTop: 20,
   },
   title: {
     color: COLORS.primary,
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.medium,
   },
   paragraph1: {
-    color: COLORS.secondary,
+    color: COLORS.tertiary,
     fontSize: SIZES.small,
     fontFamily: 'Elmess',
   },
@@ -125,7 +125,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(202, 100, 90, 0.72)',
     borderRadius: 40,
     paddingVertical: 3,
-    paddingHorizontal: 30,
+    marginTop: 20,
+    paddingHorizontal: 20,
     alignSelf: 'center',
     marginBottom: 50,
     ...Platform.select({
@@ -142,7 +143,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: COLORS.white,
-    fontSize: SIZES.xLarge,
+    fontSize: SIZES.large,
     fontFamily: 'MarckScript',
     textAlign: 'center',
   },

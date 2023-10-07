@@ -83,20 +83,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: StatusBar.currentHeight,
     justifyContent: 'center',
+    paddingTop: StatusBar.currentHeight,
   },
   text: {
     color: COLORS.secondary,
     fontSize: SIZES.xxLarge,
     fontFamily: 'MarckScript',
     textAlign: 'center',
-    paddingTop: 40,
+    paddingTop: 30,
   },
   image: {
     marginTop: 60,
   },
   icon: {
     fontSize: SIZES.xLarge,
-    marginTop: 20,
+    marginTop: 10,
     marginLeft: 350,
     alignSelf: 'center',
     color: COLORS.tertiary,

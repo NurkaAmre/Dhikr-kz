@@ -11,7 +11,7 @@ import {
   StatusBar,
 } from 'react-native';
 import { COLORS, SIZES } from '../constants/theme';
-import bg from '../assets/images/bg.png';
+import bg from '../assets/images/9.png';
 import AllahsNames99 from '../assets/json/allahs_99_names.json';
 
 const AllahsNames = ({ navigation }) => {
@@ -69,10 +69,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.bgMain,
     paddingTop: StatusBar.currentHeight,
-  },
-  image: {
-    width: 410,
-    height: 850,
   },
   text: {
     color: COLORS.secondary,
@@ -144,7 +140,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: COLORS.white,
-    fontSize: SIZES.xLarge,
+    fontSize: SIZES.category,
     fontFamily: 'MarckScript',
     textAlign: 'center',
   },
