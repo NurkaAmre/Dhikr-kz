@@ -22,7 +22,7 @@ const CounterPage = ({ route }) => {
 
   const [target, setTarget] = useState(0);
   const [count, setCount] = useState(0);
-  const [days, setDays] = useState(0);
+  const [days, setDays] = useState(1);
   const [showCongratulationsModal, setShowCongratulationsModal] =
     useState(false);
   const [title, setTitle] = useState(route.params?.title || '');
@@ -248,6 +248,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Caveat',
     textAlign: 'center',
     paddingHorizontal: 10,
+    paddingTop: 20,
   },
   card: {
     flexDirection: 'row',
@@ -268,12 +269,12 @@ const styles = StyleSheet.create({
   },
   cardText: {
     color: '#fff',
-    fontSize: SIZES.medium,
+    fontSize: SIZES.small,
     fontFamily: 'Elmess',
   },
   label: {
     color: COLORS.tertiary,
-    fontSize: SIZES.small,
+    fontSize: SIZES.xSmall,
     alignSelf: 'flex-start',
     fontFamily: 'Elmess',
     marginBottom: 5,
@@ -323,9 +324,9 @@ const styles = StyleSheet.create({
   buttonContainer2: {
     backgroundColor: '#CA6853',
     borderRadius: 40,
-    paddingVertical: 4,
-    marginTop: 60,
-    paddingHorizontal: 50,
+    paddingVertical: 2,
+    marginTop: 40,
+    paddingHorizontal: 30,
     alignSelf: 'center',
     ...Platform.select({
       ios: {
@@ -341,7 +342,7 @@ const styles = StyleSheet.create({
   },
   buttonText2: {
     color: COLORS.white,
-    fontSize: SIZES.xLarge,
+    fontSize: SIZES.category,
     fontFamily: 'MarckScript',
     textAlign: 'center',
   },

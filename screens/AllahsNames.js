@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     paddingTop: StatusBar.currentHeight,
   },
   text: {
-    color: COLORS.secondary,
+    color: COLORS.tertiary,
     fontSize: SIZES.xLarge,
     fontFamily: 'MarckScript',
     alignSelf: 'center',

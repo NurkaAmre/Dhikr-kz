@@ -29,7 +29,8 @@ const DevInfo = () => {
   const handleRate = () => {
     const appStoreUrl = Platform.select({
       ios: 'https://apps.apple.com/app-id',
-      android: 'market://details?id=com.yourapp.package',
+      android:
+        'https://play.google.com/store/apps/details?id=com.nurkaamre.dhikrcounterkz',
     });
 
     Linking.openURL(appStoreUrl).catch((error) =>

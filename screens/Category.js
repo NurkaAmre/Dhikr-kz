@@ -36,7 +36,7 @@ const Category = ({ navigation }) => {
             navigation.navigate('MyDailyDhikr');
           }}
         >
-          <Text style={styles.buttonText}>Менің Зікірлерім</Text>
+          <Text style={styles.buttonText}>Зікірлерім</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.buttonContainer}

@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     // height: 850,
   },
   text: {
-    color: COLORS.secondary,
+    color: COLORS.tertiary,
     fontSize: SIZES.xLarge,
     fontFamily: 'MarckScript',
     alignSelf: 'center',
