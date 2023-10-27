@@ -39,7 +39,7 @@ const DevInfo = () => {
   };
 
   const handleFeedback = () => {
-    Linking.openURL('mailto:your-email@gmail.com?subject=Feedback').catch(
+    Linking.openURL('mailto:nurkerey30@gmail.com?subject=Feedback').catch(
       (error) => console.error('Error opening email:', error)
     );
   };
